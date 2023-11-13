@@ -11,4 +11,17 @@ git log -n 8
 git checkout master
 git merge origin/branch1
 git branch -d origin/branch1
-
+git add mergefile.txt
+git commit -m "Разрешение конфликта"
+git branch
+git branch -d branch1
+git add .
+git commit "Слияние в одну ветку и удаление ненужной"
+git add changes.txt
+git commit -m "Создание файла"
+git add changes.txt
+git commit -m "Первое изменение в changes.txt"
+git add changes.txt
+git commit -m "Второе изменение в changes.txt"
+git reset --hard HEAD^
+git switch -s report
