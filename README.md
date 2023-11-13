@@ -25,3 +25,9 @@ git add changes.txt
 git commit -m "Второе изменение в changes.txt"
 git reset --hard HEAD^
 git switch -s report
+touch readme.md
+git add .
+git commit -m "Сделан лог команд до удаления ветки включительно"
+git add .
+git commit -m "Сделан лог команд до создания ветки для отчета включительно"
+git log --pretty=format:"%h - %ad | %an | %s" --date=short
